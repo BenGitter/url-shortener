@@ -1,0 +1,30 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "Simple URL shortener",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenGitter/url-shortener.git"
+  },
+  "author": "Benjamin van Zwienen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenGitter/url-shortener/issues"
+  },
+  "homepage": "https://github.com/BenGitter/url-shortener#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "mongodb": "^2.2.9",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "dotenv": "^2.0.0",
+    "gulp": "^3.9.1"
+  }
+}
