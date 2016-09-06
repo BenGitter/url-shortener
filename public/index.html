@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <meta charset="UTF-8">
   <title>URL Shortener</title>
 </head>
 <body>
-  <h1>URL Shortener service</h1>
-  <p>What does it do?</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>URL Shortener service</h1>
+        <p>This API will change a provided url to an a simple anonymous url. You can then open that url
+          and you will be redirected to the orignal url.</p>
+        <p>
+          <b>NOTE:</b> Provided url should look like: <code>http://www.example.com</code>
+        </p>
 
-  <h3>Example creation usage</h3>
+        <h3>Example creation usage</h3>
+        <code>https://honey-diver.hyperdev.space/new/http://www.google.com</code>
 
-  <h3>Example creation output</h3>
+        <h3>Example creation output</h3>
+        <pre><code>{ "original_url": "http://google.com", "short_url": "https://honey-diver.hyperdev.space/57ceae9e290fb2099cf6e619"  }</code></pre>
 
-  <h3>Usage</h3>
+        <h3>Usage</h3>
+        <code>https://honey-diver.hyperdev.space/57ceae9e290fb2099cf6e619</code>
 
-  <h3>Will redirect to:</h3>
+        <h3>Will redirect to:</h3>
+        <code>http://www.google.com</code>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

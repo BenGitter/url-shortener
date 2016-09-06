@@ -5,7 +5,7 @@ var port = process.env.PORT || 8080;
 
 // Other dependencies
 var db = require("./db");             // require db file
-dotenv = require("dotenv").config();  // require dotenv
+//dotenv = require("dotenv").config();  // require dotenv
 var api = require("./routes/api")     // require api router
 
 
