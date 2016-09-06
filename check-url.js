@@ -1,19 +1,11 @@
-module.exports = function (Url, callback) {
-  var http = require('http'),
-      url = require('url');
-  var options = {
-    method: 'HEAD',
-    host: url.parse(Url).host,
-    port: 80,
-    path: url.parse(Url).pathname
-  };
-
-  var req = http.request(options, function (r) {
-    callback( r.statusCode== 200);
-  });
-  req.on("error", function(err){
-    callback( false );
-  });
-  
-  req.end();
+module.exports = function (url) {
+  // Check if url is correct
+  var match = url.match(/http(s:|:)\/\/www.{1,}\.[a-zA-z]{1,}/);
+  if(match){
+    if(match[0].length === url.length){
+      return true;
+    }
+  }else{
+    return false;
+  }
 }
