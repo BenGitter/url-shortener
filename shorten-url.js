@@ -16,7 +16,7 @@ module.exports = function(link, callback){
       response = { "error": "Database error, try again." };
     }else{
       var id = doc.ops[0]._id;
-      var short_url = "https://honey-diver.hyperdev.space/" + id;
+      var short_url = "https://url-shortener-bengitter.herokuapp.com/" + id;
       response = { "original_url": original_url, "short_url": short_url };
     }
 
